@@ -14,7 +14,8 @@ import UserRoutes from "./routes/usersRoutes.js";
 import BookingRoutes from "./routes/bookingRoutes.js";
 
 // Middleware 
-app.use(cors({origin: '*'}));
+app.use(cors());
+// app.use(cors({origin: '*'}));
 app.use(express.json());
 app.use(cookieParser());
 
