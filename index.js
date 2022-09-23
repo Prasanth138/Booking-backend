@@ -28,7 +28,7 @@ app.use("/api/booking", BookingRoutes);
 
 const msg="<div><h1>Welcome to Hotel Booking API</h1></div>"
 
-app.get('/', function (req, res) {
+app.get('', function (req, res) {
     res.send(`${msg}`);
   })
 
