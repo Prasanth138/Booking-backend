@@ -26,6 +26,13 @@ app.use("/api/users", UserRoutes);
 app.use("/api/booking", BookingRoutes);
 
 
+const msg="<div><h1>Welcome to Hotel Booking API</h1></div>"
+
+app.get('/', function (req, res) {
+    res.send(`${msg}`);
+  })
+
+
 // Error Handler 
 app.all('*',(req,res,next)=>{
   next(new AppError(`Can't find ${req.originalUrl} on this server`, 404));
