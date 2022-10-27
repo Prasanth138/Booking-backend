@@ -34,7 +34,7 @@ const hotelSchema = mongoose.Schema({
   },
   photo: {
     type: String,
-    required: [true, "Please upload a hotel image"]
+    // required: [true, "Please upload a hotel image"]
   },
   rooms: {
     type: [String]
