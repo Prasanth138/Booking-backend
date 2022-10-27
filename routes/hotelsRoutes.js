@@ -23,7 +23,7 @@ router.post('/post', createHotel);
 router.get('/allCityHotels', getAllCityHotels);
 
 //GET
-router.post('/', getHotels);
+router.get('/', getHotels);
 
 //POST
 router.post("/singleHotel", getSingleHotel);
